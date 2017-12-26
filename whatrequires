@@ -12,4 +12,5 @@ R-multcomp
 R-pbkrtest
 R-quantreg
 R-sandwich
+R-tibble
 R-tis

@@ -4,15 +4,17 @@
 #
 Name     : R-tibble
 Version  : 1.4.1
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/tibble_1.4.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tibble_1.4.1.tar.gz
 Summary  : Simple Data Frames
 Group    : Development/Tools
 License  : MIT
 Requires: R-tibble-lib
+Requires: R-evaluate
 Requires: R-pillar
 Requires: R-rlang
+BuildRequires : R-evaluate
 BuildRequires : R-markdown
 BuildRequires : R-microbenchmark
 BuildRequires : R-pillar
@@ -39,11 +41,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1514252327
+export SOURCE_DATE_EPOCH=1514477275
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1514252327
+export SOURCE_DATE_EPOCH=1514477275
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

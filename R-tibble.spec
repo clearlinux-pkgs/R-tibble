@@ -4,7 +4,7 @@
 #
 Name     : R-tibble
 Version  : 1.4.2
-Release  : 25
+Release  : 26
 URL      : https://cran.r-project.org/src/contrib/tibble_1.4.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tibble_1.4.2.tar.gz
 Summary  : Simple Data Frames

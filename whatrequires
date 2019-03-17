@@ -10,8 +10,9 @@ R-ggplot2
 R-haven
 R-modelr
 R-natserv
+R-network
 R-nycflights13
-R-purrr
+R-pkgdown
 R-readr
 R-readxl
 R-rematch2

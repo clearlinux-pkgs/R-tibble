@@ -4,27 +4,24 @@
 #
 Name     : R-tibble
 Version  : 2.1.1
-Release  : 34
+Release  : 35
 URL      : https://cran.r-project.org/src/contrib/tibble_2.1.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tibble_2.1.1.tar.gz
 Summary  : Provides a 'tbl_df' class (the 'tibble') that provides stricter checking and better formatting than the traditional data frame.
 Group    : Development/Tools
 License  : MIT
 Requires: R-tibble-lib = %{version}-%{release}
-Requires: R-assertthat
-Requires: R-dplyr
-Requires: R-fansi
-Requires: R-htmltools
-Requires: R-pillar
-Requires: R-pkgconfig
 BuildRequires : R-assertthat
+BuildRequires : R-cli
 BuildRequires : R-dplyr
 BuildRequires : R-fansi
 BuildRequires : R-htmltools
+BuildRequires : R-import
 BuildRequires : R-markdown
 BuildRequires : R-microbenchmark
 BuildRequires : R-pillar
 BuildRequires : R-pkgconfig
+BuildRequires : R-rlang
 BuildRequires : R-withr
 BuildRequires : buildreq-R
 
@@ -55,10 +52,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552794615
+export SOURCE_DATE_EPOCH=1552927446
 
 %install
-export SOURCE_DATE_EPOCH=1552794615
+export SOURCE_DATE_EPOCH=1552927446
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

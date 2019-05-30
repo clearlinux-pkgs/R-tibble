@@ -1,7 +1,8 @@
-2.1.1
+2.1.2
 R-assertthat
 R-cli
 R-dplyr
+R-evaluate
 R-fansi
 R-htmltools
 R-import

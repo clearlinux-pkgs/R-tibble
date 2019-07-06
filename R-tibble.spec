@@ -4,7 +4,7 @@
 #
 Name     : R-tibble
 Version  : 2.1.3
-Release  : 39
+Release  : 40
 URL      : https://cran.r-project.org/src/contrib/tibble_2.1.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tibble_2.1.3.tar.gz
 Summary  : Provides a 'tbl_df' class (the 'tibble') that provides stricter checking and better formatting than the traditional data frame.

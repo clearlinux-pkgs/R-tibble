@@ -4,38 +4,38 @@
 #
 Name     : R-tibble
 Version  : 2.1.3
-Release  : 41
+Release  : 42
 URL      : https://cran.r-project.org/src/contrib/tibble_2.1.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tibble_2.1.3.tar.gz
-Summary  : Provides a 'tbl_df' class (the 'tibble') that provides stricter checking and better formatting than the traditional data frame.
+Summary  : Simple Data Frames
 Group    : Development/Tools
 License  : MIT
 Requires: R-tibble-lib = %{version}-%{release}
+Requires: R-cli
+Requires: R-crayon
 Requires: R-dplyr
-Requires: R-evaluate
 Requires: R-fansi
+Requires: R-htmltools
+Requires: R-import
 Requires: R-pillar
 Requires: R-pkgconfig
+Requires: R-rlang
+BuildRequires : R-cli
+BuildRequires : R-crayon
 BuildRequires : R-dplyr
-BuildRequires : R-evaluate
 BuildRequires : R-fansi
+BuildRequires : R-htmltools
+BuildRequires : R-import
 BuildRequires : R-markdown
 BuildRequires : R-microbenchmark
 BuildRequires : R-pillar
 BuildRequires : R-pkgconfig
+BuildRequires : R-rlang
 BuildRequires : R-withr
 BuildRequires : buildreq-R
 
 %description
-# tibble <img src="man/figures/logo.png" align="right" />
-[![Build
-Status](https://travis-ci.org/tidyverse/tibble.svg?branch=master)](https://travis-ci.org/tidyverse/tibble)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/tidyverse/tibble?branch=master&svg=true)](https://ci.appveyor.com/project/tidyverse/tibble)
-[![codecov](https://codecov.io/gh/tidyverse/tibble/branch/master/graph/badge.svg)](https://codecov.io/gh/tidyverse/tibble)
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/tibble)](https://cran.r-project.org/package=tibble)
-[![Life
-cycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/)
+stricter checking and better formatting than the traditional data frame.
 
 %package lib
 Summary: lib components for the R-tibble package.
@@ -52,13 +52,13 @@ lib components for the R-tibble package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1559897979
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1569295612
 
 %install
-export SOURCE_DATE_EPOCH=1559897979
+export SOURCE_DATE_EPOCH=1569295612
 rm -rf %{buildroot}
-export LANG=C
+export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -87,7 +87,7 @@ R CMD INSTALL --preclean --install-tests --built-timestamp=${SOURCE_DATE_EPOCH} 
 cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 %{__rm} -rf %{buildroot}%{_datadir}/R/library/R.css
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0

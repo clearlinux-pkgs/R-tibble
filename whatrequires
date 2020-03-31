@@ -1,7 +1,5 @@
 # This file contains recursive sources that require this package
-R-EnvStats
 R-bayesplot
-R-bipartite
 R-bold
 R-broom
 R-cellranger
@@ -13,9 +11,7 @@ R-flexsurv
 R-forcats
 R-generics
 R-ggplot2
-R-gridExtra
 R-haven
-R-lmerTest
 R-modelr
 R-natserv
 R-network
@@ -30,11 +26,11 @@ R-rhub
 R-rio
 R-ritis
 R-rsample
-R-sna
 R-snakecase
 R-solrium
 R-styler
 R-taxize
+R-tesseract
 R-tidyr
 R-tidyverse
 R-wikitaxa

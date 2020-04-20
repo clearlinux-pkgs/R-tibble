@@ -12,6 +12,7 @@ R-forcats
 R-generics
 R-ggplot2
 R-haven
+R-joineRML
 R-modelr
 R-natserv
 R-network

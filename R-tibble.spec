@@ -4,7 +4,7 @@
 #
 Name     : R-tibble
 Version  : 3.0.1
-Release  : 46
+Release  : 47
 URL      : https://cran.r-project.org/src/contrib/tibble_3.0.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tibble_3.0.1.tar.gz
 Summary  : Simple Data Frames
@@ -13,10 +13,8 @@ License  : MIT
 Requires: R-tibble-lib = %{version}-%{release}
 Requires: R-cli
 Requires: R-crayon
-Requires: R-dplyr
 Requires: R-ellipsis
 Requires: R-fansi
-Requires: R-htmltools
 Requires: R-lifecycle
 Requires: R-magrittr
 Requires: R-pillar
@@ -25,31 +23,19 @@ Requires: R-rlang
 Requires: R-vctrs
 BuildRequires : R-cli
 BuildRequires : R-crayon
-BuildRequires : R-dplyr
 BuildRequires : R-ellipsis
 BuildRequires : R-fansi
-BuildRequires : R-htmltools
 BuildRequires : R-lifecycle
 BuildRequires : R-magrittr
-BuildRequires : R-markdown
-BuildRequires : R-microbenchmark
 BuildRequires : R-pillar
 BuildRequires : R-pkgconfig
 BuildRequires : R-rlang
 BuildRequires : R-vctrs
-BuildRequires : R-withr
 BuildRequires : buildreq-R
 
 %description
-# tibble <img src="man/figures/logo.png" align="right" />
-[![Build
-Status](https://travis-ci.org/tidyverse/tibble.svg?branch=master)](https://travis-ci.org/tidyverse/tibble)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/tidyverse/tibble?branch=master&svg=true)](https://ci.appveyor.com/project/tidyverse/tibble)
-[![codecov](https://codecov.io/gh/tidyverse/tibble/branch/master/graph/badge.svg)](https://codecov.io/gh/tidyverse/tibble)
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/tibble)](https://cran.r-project.org/package=tibble)
-[![Life
-cycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/)
+provides stricter checking and better formatting than the traditional
+    data frame.
 
 %package lib
 Summary: lib components for the R-tibble package.
@@ -61,21 +47,22 @@ lib components for the R-tibble package.
 
 %prep
 %setup -q -c -n tibble
+cd %{_builddir}/tibble
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1587404879
+export SOURCE_DATE_EPOCH=1589412561
 
 %install
-export SOURCE_DATE_EPOCH=1587404879
+export SOURCE_DATE_EPOCH=1589412561
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

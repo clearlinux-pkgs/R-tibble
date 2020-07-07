@@ -9,7 +9,6 @@ R-dtplyr
 R-feather
 R-flexsurv
 R-forcats
-R-generics
 R-ggplot2
 R-haven
 R-joineRML
@@ -27,7 +26,6 @@ R-rhub
 R-rio
 R-ritis
 R-rsample
-R-snakecase
 R-solrium
 R-styler
 R-taxize

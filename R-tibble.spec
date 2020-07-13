@@ -4,7 +4,7 @@
 #
 Name     : R-tibble
 Version  : 3.0.3
-Release  : 50
+Release  : 51
 URL      : https://cran.r-project.org/src/contrib/tibble_3.0.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tibble_3.0.3.tar.gz
 Summary  : Simple Data Frames

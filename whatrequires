@@ -1,8 +1,10 @@
 # This file contains recursive sources that require this package
 R-bayesplot
+R-bench
 R-bold
 R-broom
 R-cellranger
+R-clustMixType
 R-dbplyr
 R-dplyr
 R-dtplyr
@@ -31,5 +33,6 @@ R-styler
 R-taxize
 R-tidyr
 R-tidyverse
+R-waldo
 R-wikitaxa
 R-worrms

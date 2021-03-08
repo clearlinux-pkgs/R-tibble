@@ -1,4 +1,5 @@
 # This file contains recursive sources that require this package
+R-DiagrammeR
 R-bayesplot
 R-bench
 R-bold
@@ -14,6 +15,7 @@ R-forcats
 R-ggplot2
 R-haven
 R-joineRML
+R-lifecycle
 R-modelr
 R-natserv
 R-network

@@ -13,6 +13,8 @@ R-feather
 R-flexsurv
 R-forcats
 R-ggplot2
+R-googledrive
+R-googlesheets4
 R-haven
 R-joineRML
 R-lifecycle
@@ -36,6 +38,7 @@ R-solrium
 R-styler
 R-taxize
 R-tidyr
+R-tidyrules
 R-tidyverse
 R-waldo
 R-wikitaxa

@@ -25,6 +25,7 @@ R-network
 R-nycflights13
 R-pkgdown
 R-plotly
+R-posterior
 R-readr
 R-readxl
 R-recipes
@@ -41,6 +42,7 @@ R-taxize
 R-tidyr
 R-tidyrules
 R-tidyverse
+R-vroom
 R-waldo
 R-wikitaxa
 R-worrms

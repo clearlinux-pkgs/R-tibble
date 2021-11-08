@@ -13,6 +13,7 @@ R-dtplyr
 R-feather
 R-flexsurv
 R-forcats
+R-ggfortify
 R-ggplot2
 R-googledrive
 R-googlesheets4
@@ -38,6 +39,7 @@ R-rvest
 R-solrium
 R-styler
 R-taxize
+R-themis
 R-tidyr
 R-tidyrules
 R-tidyverse

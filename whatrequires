@@ -5,6 +5,7 @@ R-bayesplot
 R-bench
 R-bold
 R-broom
+R-broom.mixed
 R-cellranger
 R-clustMixType
 R-dbplyr
@@ -17,8 +18,10 @@ R-ggfortify
 R-ggplot2
 R-googledrive
 R-googlesheets4
+R-hardhat
 R-haven
 R-joineRML
+R-jomo
 R-modelr
 R-natserv
 R-network
